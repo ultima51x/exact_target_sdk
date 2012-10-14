@@ -34,3 +34,15 @@ easily implement new objects by simply declaring their properties.
    puts "  result code: #{result.StatusCode}"
    puts "  result message: #{result.StatusMessage}"
  end
+
+== Perform (execute) an ImportDefinition:
+
+ ExactTargetSDK.config(:username => 'foo', :password => 'mypass')
+ client = ExactTargetSDK::Client.new
+ id = ExactTargetSDK::ImportDefinition.new("CustomerKey" => "APITest1")
+ response = client.Perform("Start", id)
+ response.Results.each do |result|
+   puts "  result code: #{result.result[:status_code]}"
+   puts "  result code: #{result.result[:status_message]}"
+ end
+
