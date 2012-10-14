@@ -32,6 +32,7 @@ module ExactTargetSDK
   autoload :Email, 'exact_target_sdk/email'
   autoload :EmailSendDefinition, 'exact_target_sdk/email_send_definition'
   autoload :FilterPart, 'exact_target_sdk/filter_part'
+  autoload :ImportDefinition, 'exact_target_sdk/import_definition'
   autoload :PerformResponse, 'exact_target_sdk/perform_response'
   autoload :PerformResult, 'exact_target_sdk/perform_result'
   autoload :List, 'exact_target_sdk/list'
