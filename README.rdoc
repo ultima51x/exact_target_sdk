@@ -30,9 +30,8 @@ easily implement new objects by simply declaring their properties.
 
  puts "response status: #{response.OverallStatus}"
  response.Results.each do |result|
-   puts "result..."
-   puts "  result code: #{result.StatusCode}"
-   puts "  result message: #{result.StatusMessage}"
+   puts "  result code: #{result.result[:status_code]}"
+   puts "  result code: #{result.result[:status_message]}"
  end
 
 == Perform (execute) an ImportDefinition:
