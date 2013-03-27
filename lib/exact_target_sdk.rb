@@ -10,6 +10,7 @@ module ExactTargetSDK
   autoload :Attribute, 'exact_target_sdk/attribute'
   autoload :Base, 'exact_target_sdk/base'
   autoload :BounceEvent, 'exact_target_sdk/bounce_event'
+  autoload :BusinessUnitClient, 'exact_target_sdk/business_unit_client'
   autoload :Campaign, 'exact_target_sdk/campaign'
   autoload :Client, 'exact_target_sdk/client'
   autoload :ClickEvent, 'exact_target_sdk/click_event'
