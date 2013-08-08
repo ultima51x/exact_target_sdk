@@ -42,6 +42,7 @@ module ExactTargetSDK
   autoload :OpenEvent, 'exact_target_sdk/open_event'
   autoload :Options, 'exact_target_sdk/options'
   autoload :Priority, 'exact_target_sdk/priority'
+  autoload :Property, 'exact_target_sdk/property'
   autoload :PerformOptions, 'exact_target_sdk/perform_options'
   autoload :RecurrenceRangeTypeEnum, 'exact_target_sdk/recurrence_range_type_enum'
   autoload :RecurrenceTypeEnum, 'exact_target_sdk/recurrence_type_enum'

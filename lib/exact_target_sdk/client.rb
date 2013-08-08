@@ -114,7 +114,6 @@ class Client
         end
       end
     end
-
     RetrieveResponse.new(response)
   end
 
@@ -329,6 +328,7 @@ class Client
             xml.s :Body do
               yield(xml)
             end
+            # puts "============ #{xml}"
           end
         end
       end

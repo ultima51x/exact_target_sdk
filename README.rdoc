@@ -47,3 +47,15 @@ easily implement new objects by simply declaring their properties.
    puts "  result code: #{result.result[:status_message]}"
  end
 
+ == Data Extension Object example:
+ 
+    ExactTargetSDK.config(:username => 'foo', :password => 'mypass')
+    client = ExactTargetSDK::Client.new
+    data_extension = ExactTargetSDK::DataExtensionObject.new("CustomerKey" => "DATA_EXTENSION_TEST")
+    data_extension.Properties << ExactTargetSDK::Property.new("Name" => "first_name", "Value" => "John")
+    data_extension.Properties << ExactTargetSDK::Property.new("Name" => "last_name",  "Value" => "Doe")
+    data_extension.Properties << ExactTargetSDK::Property.new("Name" => "gender",     "Value" => "male")      data_extension.Properties << ExactTargetSDK::Property.new("Name" => "birthdate",  "Value" => "12/31/1999")
+    data_extension.Properties << ExactTargetSDK::Property.new("Name" => "zip_code",   "Value" => "90210")
+    response = client.Create(data_extension)
+
+
