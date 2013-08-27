@@ -54,6 +54,8 @@ class Client
 
         api_objects.each do |api_object|
           xml.Objects "xsi:type" => api_object.type_name do
+            # TODO this is a hack! This should go in the data_extension_object
+            xml.ObjectID   "xsi:nil" => 'true'
             api_object.render!(xml)
           end
         end

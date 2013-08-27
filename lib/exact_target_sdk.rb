@@ -26,6 +26,7 @@ module ExactTargetSDK
   autoload :DataExtensionField, 'exact_target_sdk/data_extension_field'
   autoload :DataExtensionFieldType, 'exact_target_sdk/data_extension_field_type'
   autoload :DataExtensionObject, 'exact_target_sdk/data_extension_object'
+  autoload :DataExtensionClient, 'exact_target_sdk/data_extension_client'
   autoload :DeleteOptions, 'exact_target_sdk/delete_options'
   autoload :DeleteResponse, 'exact_target_sdk/delete_response'
   autoload :DeleteResult, 'exact_target_sdk/delete_result'
