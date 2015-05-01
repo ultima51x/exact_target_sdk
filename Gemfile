@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'activemodel', '~> 3.0'
-gem 'activesupport', '~> 3.0'
+gem 'activemodel', '~> 4.0'
+gem 'activesupport', '~> 4.0'
 gem 'guid'
 gem 'savon', '~> 1.2'
 
